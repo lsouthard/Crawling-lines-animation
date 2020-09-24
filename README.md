@@ -1,7 +1,7 @@
 # Crawling-lines-animation
 _How to create animated lines and labels_
 
-I created an animatied line graph with animated labels for a Data Viz Storytelling competition. The data included Denver eviction data from Jan 2019 - June 2019 and Jan 2020 - Aug 2020. I wanted to show the difference between the two years since eviction moratorium was implemented in response to COVID in March 2020 (and exteneded through the end of 2020). 
+I created an animated line graph with animated labels for a Data Viz Storytelling competition. The data included Denver eviction data from Jan 2019 - June 2019 and Jan 2020 - Aug 2020. I wanted to show the difference between the two years since eviction moratorium was implemented in response to COVID in March 2020 (and extended through the end of 2020). 
 
 ## Final Image:
 Below is my final figure:
@@ -38,7 +38,7 @@ Both data files will appear like this:
 ## Format the data for the visualization
 
 For the figure, I wanted to do the following:
-* Pull a part the date into year and month 
+* Pull apart the date into year and month 
 ** Looking ahead: I want to group by year and have the x-axis be month
 * Summarize the counts by month
 * Get a cummulative sum for each succeeding month (by year)
@@ -121,7 +121,7 @@ labels <-  c("January", "February", "March", "April", "May", "June")
 ## Plot a static background layer
 This layer includes anything I wanted to remain the **same** during the transition. You can also define a theme or customize one with ```theme_set()``` , but I had some specifics I wanted to accomplish with this code and I only needed to do it once. Therefore, I put in my theme parameters into ```p1```. 
 
-For purposes of what I was doing, I needed my x-axis limits to go past the months I was plotting so the labels didn't get cut off (hence the extra ticks on the x-axis that have no labels). This is why I used the ```panel.background = element_blank()``` and the ``` axis.line = element_blank()``` arguments. 
+For the purpose of what I was doing, I needed my x-axis limits to go past the months I was plotting so the labels didn't get cut off (hence the extra ticks on the x-axis that have no labels). This is why I used the ```panel.background = element_blank()``` and the ``` axis.line = element_blank()``` arguments. 
 
 ```
 p1 <- data %>% 
