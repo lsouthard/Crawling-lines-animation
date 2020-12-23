@@ -169,8 +169,7 @@ p2 <- p1 +
                               (Year == "2020" & month == "01") ~ as.numeric(cumsum+100),
                               (Year == "2019" & month == "02") ~ as.numeric(cumsum+200),
                               T ~ as.numeric(cumsum)),
-                Label = text, colour = Year), 
-            hjust = 0, size = 4, show.legend = FALSE) +
+                label = text, colour = Year), hjust = 0, size = 4, show.legend = FALSE) +
   #to keep points as we go add the following line of text
   #removing it will give you just the lines
   geom_point(aes(group = seq_along(as.numeric(month)))) +
