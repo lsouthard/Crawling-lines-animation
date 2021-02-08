@@ -41,7 +41,7 @@ For the figure, I wanted to do the following:
 * Pull apart the date into year and month 
 ** Looking ahead: I want to group by year and have the x-axis be month
 * Summarize the counts by month
-* Get a cummulative sum for each succeeding month (by year)
+* Get a cumulative sum for each succeeding month (by year)
 
 I ended up doing this for each file then joining the data back together. There are a lot of ways to do this and probably some better ways, but I think it shows the logic well:
 
